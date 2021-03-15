@@ -9,6 +9,7 @@
 :root {
   --ff-primary: "Montserrat";
   --ff-secondary: "Rubik";
+  --ff-third: "Josefin Slab"
 
   --ff-reg: 300;
   --fw-bold: 900;
@@ -157,6 +158,9 @@ header {
   background-size: cover;
   background-attachment: fixed;
   height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section__subtitle--intro {
@@ -183,6 +187,9 @@ header {
   }
 
   .section__subtitle--intro {
+    background-color: var(--clr-dark-secondary);
+    color: var(--clr-light);
+    font: var(--ff-third);
     align-self: flex-start;
     grid-column: -1 / 1;
     grid-row: 2;
