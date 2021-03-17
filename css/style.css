@@ -200,27 +200,42 @@ header {
   }
 }
 
-.competences {
+.section__title{
   display: flex;
+  justify-content: center;
 }
+
 
 .images__competences {
   display: flex;
   justify-content: space-evenly;
-  width: auto;
+  width: 80em;
 }
 
 .avant__text,
 .apres__text {
   text-align: center;
 }
+
+
 .materiel__list,
 .skills__list {
-  display: flex;
-  flex-direction: column;
   list-style: none;
-  width: 20em;
 }
+
+@media (min-width: 800px) {
+  .competences {
+    display: flex;
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .competence + .competence {
+    margin-left: 2em;
+  }
+}
+
 
 .portfolio {
   display: flex;
