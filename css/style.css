@@ -156,8 +156,7 @@ header {
 .hero {
   background-image: url(../img/hero.jpg);
   background-size: cover;
-  background-attachment: fixed;
-  height: 1000px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,48 +199,64 @@ header {
   }
 }
 
-.section__title{
-  display: flex;
-  justify-content: center;
-}
-
-
-.images__competences {
-  display: flex;
-  justify-content: space-evenly;
-  width: 80em;
-}
-
-.avant__text,
-.apres__text {
+.mes-competences {
   text-align: center;
 }
 
-
-.materiel__list,
-.skills__list {
-  list-style: none;
+.section__title--competences{
+  color: var(--clr-accent-secondary);
+  position: relative;
 }
 
-@media (min-width: 800px) {
+.section__title--competences:after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-light);
+  opacity: 0.25;
+}
+
+.competences {
+  display: grid;
+  grid-template-columns: repeat(3, 30vw);
+  grid-gap: 4vw;
+  gap: 4vw;
+}
+
+.competence__subtitle {
+  font-size: var(--fs-h2);
+  color: var(--clr-accent-secondary);
+  font-weight: var(--fw-bold);
+}
+
+.competence__text {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  padding-top: 300px;
+}
+
+
+
+
+/* @media (min-width: 800px) {
   .competences {
     display: flex;
-    max-width: 2000px;
+    max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
   }
-
-  .competence + .competence {
-    margin-left: 2em;
-  }
-}
+} */
 
 
-.portfolio {
+
+
+/* .portfolio {
   display: flex;
   justify-content: space-evenly;
   width: auto;
-}
+} */
 
 /* footer */
 
