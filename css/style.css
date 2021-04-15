@@ -196,6 +196,7 @@ header {
     grid-area: img;
     min-width: 250px;
     position: relative;
+    bottom: 35px;
     z-index: 2;
   }
 
@@ -218,10 +219,12 @@ header {
 
 .mes-competences {
   text-align: center;
+  background: var(--clr-dark);
 }
 
 .section__title--competences{
-  color: var(--clr-accent-secondary);
+  font-size: var(--fs-h1);
+  color: var(--clr-accent);
   position: relative;
 }
 
@@ -235,6 +238,12 @@ header {
   opacity: 0.25;
 }
 
+.competence__text--titre {
+  color: var(--clr-accent);
+  font-size: var(--fs-h2);
+  text-decoration: underline;
+}
+
 .competences {
   display: grid;
   grid-template-columns: repeat(3, 30vw);
@@ -245,8 +254,13 @@ header {
 
 
 .competence__text {
+  color: var(--clr-light);
   font-size: var(--fs-h3);
   font-weight: var(--fw-bold);
+}
+
+.competence__image--text {
+  color: var(--clr-accent);
 }
 
 @media (max-width: 1100px) {
@@ -258,6 +272,59 @@ header {
 }
 
 
+
+/* My work */
+
+.my-work {
+  text-align: center;
+}
+
+.section__title--work {
+  color: var(--clr-accent-secondary);
+  position: relative;
+  font-size: var(--fs-h1);
+}
+
+.section__title--work:after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-light);
+  opacity: 0.25;
+}
+
+.portfolio {
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 26em));
+    justify-content: center;
+    grid-gap: 2vw;
+    gap: 2vw;
+}
+
+.editeur {
+  position: relative;
+}
+
+.editeur__logo {
+  position: absolute;
+  z-index: 1;
+  width: 40%;
+  left: 173px;
+  top: 203px;
+}
+
+.editeur__logo-irodori {
+  left: 148px;
+  top: 203px;
+}
+
+.editeur__manga {
+  z-index: -1;
+  filter: blur(5px);
+  
+}
 
 
 /* .portfolio {
